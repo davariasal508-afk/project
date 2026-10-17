@@ -1,36 +1,25 @@
-name: oxygen_erfan
-
-description: "A new Flutter project."
-
-publish_to: "none"
-
-version: 2.1.0+102
+name: erfan_oxigen_app
+description: "Erfan Oxigen - Ultra Luxury Men's Barber, Academy & Beauty Studio"
+publish_to: 'none'
+version: 1.0.0+1
 
 environment:
-  sdk: ^3.11.3
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-
-  cupertino_icons: ^1.0.8
-
-  shared_preferences: ^2.2.3
-  http: ^1.6.0
-  image_picker: ^1.1.2
-  file_picker: ^8.1.7
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.1.2
+  intl: any
+  cached_network_image: ^3.3.1
   google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  flutter_lints: ^6.0.0
+  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
-
-  assets:
-    - assets/images/login_hero.png
-    - assets/images/oxigen_logo_gold.png
-    - assets/images/oxigen_shield_mark.png

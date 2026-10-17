@@ -1,19 +1,78 @@
-ERFAN OXIGEN V101 - Tailscale-ready build
+# ERFAN OXIGEN — Official Flutter Application
+## آکادمی و استودیو زیبایی لوکس مردانه عرفان اکسیژن
 
-# oxygen_erfan
+این پروژه تبدیل کامل و پیاده‌سازی رسمی اپلیکیشن **عرفان اکسیژن** با فریم‌ورک قدرتمند **Flutter** (زبان Dart) است که دارای پشتیبانی کامل از RTL فارسی، طراحی اختصاصی مشکی و طلای شامپاینی متالیک (Champagne Gold)، معماری تمیز و مدیریت حالت با `Provider` می‌باشد.
 
-A new Flutter project.
+---
 
-## Getting Started
+### قابلیت‌های پیاده‌سازی شده در فلاتر:
+1. **صفحه ورود فوق‌لوکس (Login Screen)**:
+   - فرمت‌بندی و اعتبارسنجی شماره موبایل
+   - تاگل نمایش/مخفی‌سازی رمز عبور و کد یکبارمصرف (OTP)
+   - دکمه‌های ورود سریع تستی برای جابجایی بین نقش‌ها (مدیر، استاد، هنرجویان، مشتری VIP)
+2. **کلاس‌های امروز (Today's Classes Screen)**:
+   - فیلترگذاری دقیق دسترسی‌ها براساس کاربر لاگین شده
+   - نمایش وضعیت کلاس، زمان‌بندی، استاد، سالن و استودیو
+3. **ثبت‌نام در دوره و آپلود فیش واریزی (Course Enrollment & Payment Receipt Flow)**:
+   - کارت شیشه‌ای بلور و گلس با واترمارک ترنسلوسنت لوگوی اختصاصی ERFAN OXIGEN
+   - انتخاب و پیش‌نمایش تصویر فیش واریزی
+   - تعویض یا حذف فیش، ثبت کد پیگیری
+   - رفتن به وضعیت رسمی «در انتظار تأیید مدیر»
+4. **پنل مدیریت — درخواست‌های ثبت‌نام (Manager Enrollment Requests)**:
+   - لیست تمام درخواست‌های واریز فیش
+   - دیالوگ بزرگنمایی و بررسی فیش واریز
+   - دکمه‌های تأیید با پیام رسمی «ثبت‌نام با موفقیت انجام شد» و ایجاد قطعی ثبت‌نام یا رد فیش
+5. **پنل مدیریت — کنترل مشاهده‌پذیری کلاس‌ها (Manager Class Visibility Control)**:
+   - ۴ حالت مشاهده‌پذیری:
+     - ۱. همه هنرجویان (`all_students`)
+     - ۲. نقش‌های مشخص (`specific_roles`)
+     - ۳. دوره/گروه مشخص (`specific_course`)
+     - ۴. کاربران انتخاب‌شده (`selected_users`) با ابزار جستجوی نام/موبایل و چیپ‌های مالتی‌سلکت
+6. **بیوتی استودیو و رزرو خدمات VIP (Beauty Studio & Services)**:
+   - پکیج‌های اختصاصی هیرکات، فشیال، کراتین و پکیج داماد رویال
+7. **پروفایل کاربری و سوئیچر هوشمند نقش‌ها**.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+### نحوه اجرای پروژه در سیستم شما (Quick Start):
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+#### پیش‌نیازها:
+- نصب بودن **Flutter SDK** (نسخه 3.0 به بالا)
+- یکی از ابزارهای Android Studio، VS Code یا ترمینال
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### مراحل اجرا:
+
+۱. وارد پوشه پروژه شوید:
+```bash
+cd flutter_app
+```
+
+۲. بسته‌ها و وابستگی‌ها را دریافت کنید:
+```bash
+flutter pub get
+```
+
+۳. ساخت اسکلت پلتفرم‌ها (در صورت نیاز به پلتفرم‌های جدید):
+```bash
+flutter create .
+```
+
+۴. اجرای اپلیکیشن:
+- **اجرا روی مرورگر کروم (Web):**
+```bash
+flutter run -d chrome
+```
+- **اجرا روی شبیه‌ساز یا گوشی اندروید (Android):**
+```bash
+flutter run -d android
+```
+- **اجرا روی آیفون / مک (iOS/macOS):**
+```bash
+flutter run -d ios
+```
+
+---
+
+طراحی و توسعه‌یافته بر اساس سیستم طراحی:
+`stitch_erfan_oxigen_premium_ui_system`
+لوکس، اختصاصی، مدرن و استاندارد.
